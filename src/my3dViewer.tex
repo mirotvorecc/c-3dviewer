@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\title{3dViewer\_v1.0}
+\author{Suzymarg, Grubblyj, Aimeebro}
+\date{March, 2024}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\section{Introduction}
+The my3dViewer project is an advanced 3D model visualization tool implemented in C programming language. It provides features for loading and rendering 3D models, exploring scenes, and interacting with 3D objects. This document provides an overview of the project structure and functionality.
+
+\section{Project Structure}
+The my3dViewer\_v1.0 project is organized into several directories, each serving a specific purpose. Here's an overview of the project structure:
+
+\subsection{gui/my3dViewer}
+The gui/my3dViewer directory contains the source code and resources related to the graphical user interface (GUI) of the my3dViewer\_v1.0 application. It includes files such as:
+
+\begin{itemize}
+\item \textbf{my3dViewer.pro}: Project file for Qt.
+\item \textbf{main.cpp}: Main program entry point.
+\item \textbf{mainwindow.cpp}: Implementation of the main application window.
+\item \textbf{mainwindow.h}: Header file for the mainwindow.cpp module.
+\item \textbf{mainwindow.ui}: User interface layout file.
+\item \textbf{open\_gl\_view.cpp}: Implementation of the OpenGL view for rendering 3D models.
+\item \textbf{open\_gl\_view.h}: Header file for the open\_gl\_view.cpp module.
+\end{itemize}
+
+\subsection{gui/render}
+The gui/render directory contains code related to 3D rendering and graphics. It includes files such as:
+
+\begin{itemize}
+\item \textbf{render.cpp}: Implementation of rendering functions.
+\item \textbf{render.h}: Header file for the render.cpp module.
+\end{itemize}
+
+\subsection{include}
+The include directory contains header files that define data structures and function prototypes used throughout the project. It includes files like affine.h, axis.h, coordinate.h, model.h, parser.h, and scene.h.
+
+\subsection{tests}
+The tests directory contains unit tests for various project components.
+
+\subsection{viewer}
+The viewer directory contains the core logic and components of the my3dViewer\_v1.0 application. It includes subdirectories for different aspects of the project:
+
+\subsubsection{affine}
+The affine directory contains code related to affine transformations of 3D objects. It includes files like rotation.c and translation.c.
+
+\subsubsection{objects}
+The objects directory is intended for storing object files resulting from source code compilation.
+
+\subsubsection{parser}
+The parser directory contains code for parsing and handling 3D model files. It includes files like get\_file\_name.c, handle\_face.c, handle\_vertice.c, obj\_to\_model.c, and reduce\_memory.c.
+
+\subsubsection{scene}
+The scene directory contains code for managing 3D scenes and models. It includes files like model.c and scene.c.
+
+\section{Build and Run Instructions}
+To build and the my3dViewer\_v1.0 project, navigate to the project root directory and execute the following command in the terminal:
+
+\begin{verbatim}
+$ make
+\end{verbatim}
+
+\section{Usage}
+The my3dViewer\_v1.0 application allows users to load and visualize 3D models. It provides features for exploring scenes, rotating and zooming in on objects, and interacting with the 3D environment. For specific usage details, please refer to the application's documentation.
+
+\section{Contributing}
+We welcome contributions to the my3dViewer\_v1.0 project! If you want to contribute, follow these steps:
+
+\begin{enumerate}
+\item Fork the project repository.
+\item Create a new branch for your feature or bug fix.
+\item Make your changes and ensure they are properly tested.
+\item Commit your changes and push them to your fork.
+\item Open a pull request on the main project repository.
+\item Wait for a review and approval from the project maintainers.
+\end{enumerate}
+
+\section{License}
+This project is licensed under the School 21 License. See the \texttt{LICENSE} file for more details.
+
+\end{document}
+
