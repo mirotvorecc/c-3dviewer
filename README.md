@@ -47,8 +47,9 @@ A desktop application that loads, parses, and renders Wavefront `.obj` models us
 
 ## Controls
 
-- **Rotate**: Click-and-drag  
-- **Zoom**: Mouse wheel  
+- **Rotate**
+- **Zoom**
+- **Move**
 
 ## Notes
 
